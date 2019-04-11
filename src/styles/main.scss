@@ -1,0 +1,28 @@
+$background: #0E0F10;
+$header_height: 3rem;
+$main_height: calc(100vh - #{$header_height});
+
+#root, body, html {
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  background: $background;
+}
+
+header {
+  height: $header_height;
+  width: 100%;
+  background: red;
+  padding: 1rem;
+}
+
+main {
+  height: $main_height;
+  width: 100%;
+}
+
+footer {
+  height: 10rem;
+  width: 100%;
+  background: blue;
+}
