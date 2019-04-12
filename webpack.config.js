@@ -28,7 +28,8 @@ module.exports = {
                         }
                     }]
                 },
-                {test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000'}
+                {test: /\.(woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000'},
+                {test: /\.(png|jpg|gif)$/, loader: 'file-loader?name=i/[hash].[ext]'}
             ],
         }]
     },
