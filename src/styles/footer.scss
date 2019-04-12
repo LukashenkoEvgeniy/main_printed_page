@@ -1,49 +1,88 @@
+@import "./colors";
+
 footer {
   grid-area: footer;
-  background: #FFFFFF;
-  outline: 1px solid #707070;
-  .footer{
+  background: $footer-background;
+
+  .footer {
     display: flex;
     height: 100%;
-    &__content{
+
+    &__content {
+      outline: 0.5px solid #0E0F10;
+
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 1px solid #0E0F10;
-      flex-grow:1;
+      flex-grow: 1;
       padding: 20px 40px 10px 40px;
     }
 
-    &__contacts{
+    &__contacts {
       display: flex;
       flex-direction: column;
     }
 
-    &__input{
+    &__form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input {
       width: 300px;
-      height: 40px;
+      height: 35px;
       border: 0;
       font-family: inherit;
       background: none;
       border-radius: 0;
       color: #223254;
       border-bottom: 2px solid #C8CCD4;
-      &:focus{
+      transition: border-bottom-color .35s ease-in-out;
+
+      &:focus {
         outline: 0;
+        border-bottom-color: #0077FF;
+      }
+
+      &:hover {
+        border-bottom-color: #0077FF;
       }
     }
-    &__button{
-      width: 300px;
+
+    &__button {
+      height: 30px;
+      width: 190px;
+      border-radius: 17px;
+      background: #FA5050;
+      color: #FFFFFF;
+      border: 0;
+      outline: 0;
+
+      &:hover {
+        -webkit-box-shadow: 5px 5px 10px 1px rgba(196, 121, 121, 1);
+        -moz-box-shadow: 5px 5px 10px 1px rgba(196, 121, 121, 1);
+        box-shadow: 5px 5px 10px 1px rgba(196, 121, 121, 1);
+      }
+
+      &:active {
+        -webkit-box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+        box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+      }
     }
-    &__title{
+
+    &__title {
       font-size: 1.5em;
       width: 300px;
     }
-    &__text{
+
+    &__text {
       width: 300px;
       font-size: 0.75em;
     }
-    &__label{
+
+    &__label {
       width: 300px;
       color: #707070;
       font-size: 1em;
