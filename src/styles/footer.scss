@@ -6,13 +6,47 @@ footer {
     display: flex;
     height: 100%;
     &__content{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       border: 1px solid #0E0F10;
       flex-grow:1;
-      justify-content: center;
-      padding: 20px 40px 0 40px;
+      padding: 20px 40px 10px 40px;
+    }
+
+    &__contacts{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input{
+      width: 300px;
+      height: 40px;
+      border: 0;
+      font-family: inherit;
+      background: none;
+      border-radius: 0;
+      color: #223254;
+      border-bottom: 2px solid #C8CCD4;
+      &:focus{
+        outline: 0;
+      }
+    }
+    &__button{
+      width: 300px;
     }
     &__title{
       font-size: 1.5em;
+      width: 300px;
+    }
+    &__text{
+      width: 300px;
+      font-size: 0.75em;
+    }
+    &__label{
+      width: 300px;
+      color: #707070;
+      font-size: 1em;
     }
   }
 }
