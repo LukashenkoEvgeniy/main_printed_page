@@ -11,22 +11,25 @@ module.exports = {
     },
     module: {
         rules: [{
-            rules: [{
-                test: /\.scss$/,
-                use: [{
-                    loader: "style-loader", options: {
-                        sourceMap: true
-                    }
-                }, {
-                    loader: "css-loader", options: {
-                        sourceMap: true
-                    }
-                }, {
-                    loader: "sass-loader", options: {
-                        sourceMap: true
-                    }
-                }]
-            }]
+            rules: [
+                {
+                    test: /\.scss$/,
+                    use: [{
+                        loader: "style-loader", options: {
+                            sourceMap: true
+                        }
+                    }, {
+                        loader: "css-loader", options: {
+                            sourceMap: true
+                        }
+                    }, {
+                        loader: "sass-loader", options: {
+                            sourceMap: true
+                        }
+                    }]
+                },
+                {test: /\.(png|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000'}
+            ],
         }]
     },
     plugins: [

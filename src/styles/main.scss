@@ -1,11 +1,24 @@
+@import "./footer";
+@import "./asside";
+
 $background: #0E0F10;
-$header_height: 5rem;
+$header_height: 4rem;
 $main_height: calc(100vh - #{$header_height});
+
+@font-face {
+  font-family: Gothic;
+  src: url("./fonts/CenturyGothic.ttf") format("truetype");
+}
+
+p{
+  margin: 0;
+}
 
 body, html{
   margin: 0;
   height: 100%;
   width: 100%;
+  font-family: Gothic, sans-serif;
 }
 
 #root {
@@ -16,7 +29,7 @@ body, html{
   grid-template-areas:  "aside header"
                         "aside  main"
                         "aside  footer";
-  grid-template-rows: 5rem 100vh 15rem;
+  grid-template-rows: $header_height $main_height 15rem;
   grid-template-columns: 3rem 1fr;
 }
 
@@ -26,26 +39,11 @@ header {
 
 }
 
-aside {
-  grid-area: aside;
-  background: #39a188;
-}
+
 
 main {
   grid-area: main;
   background: #a1903d;
 }
 
-footer {
-  grid-area: footer;
-  background: #FFFFFF;
-  outline: 1px solid #707070;
-  .footer{
-    display: flex;
-    justify-content: ;
-    &_content{
-      border: 1px solid #0E0F10;
-    }
-  }
 
-}

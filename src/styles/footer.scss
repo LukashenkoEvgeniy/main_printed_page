@@ -1,0 +1,18 @@
+footer {
+  grid-area: footer;
+  background: #FFFFFF;
+  outline: 1px solid #707070;
+  .footer{
+    display: flex;
+    height: 100%;
+    &__content{
+      border: 1px solid #0E0F10;
+      flex-grow:1;
+      justify-content: center;
+      padding: 20px 40px 0 40px;
+    }
+    &__title{
+      font-size: 1.5em;
+    }
+  }
+}

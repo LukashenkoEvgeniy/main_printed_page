@@ -1,0 +1,20 @@
+aside {
+  grid-area: aside;
+  background: #39a188;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content_rotate {
+    .asside__text {
+      text-align: center;
+      width: 800px;
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      color: #FFFFFF;
+      white-space: pre;
+    }
+  }
+
+}
+
