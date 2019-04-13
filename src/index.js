@@ -1,4 +1,4 @@
-import "./styles/main.scss"
+import "./styles/app.scss"
 // function component() {
 //     let element = document.createElement('div');
 //     element.innerHTML = "<p>Hello webpack</p>";
@@ -6,3 +6,4 @@ import "./styles/main.scss"
 // }
 //
 // document.body.appendChild(component());
+

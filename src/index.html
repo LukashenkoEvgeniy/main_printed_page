@@ -2,19 +2,28 @@
 <html>
 <head>
     <title>SOME SHOP</title>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+
 </head>
 <body>
 <div id="root">
-    <header></header>
+    <header>LOGO</header>
     <aside>
         <div class="content_rotate">
             <pre><p class="asside__text">C  l  o  t  h  e  s   m  a  n  u  f  a  c  t  u  r  e</p></pre>
         </div>
     </aside>
     <main>
-        <div class="main__slide-down">
-            <img src="./assets/slide-down.gif" alt="">
+        <div class="main__slider">
+            <div class="main__slide">
+                <div style="height: 100%">
+                    <h1>Test</h1>
+                </div>
+            </div>
+            <div class="main__slide">123</div>
         </div>
+        <div class="main__slide-down"></div>
     </main>
     <footer>
         <div class="footer">
@@ -32,9 +41,13 @@
                     <label class="footer__label">info.printed.one@gmail.com</label>
                 </div>
                 <div class="social-links">
-                    <img src="./assets/social/instagram.png" alt="">
+                    <img src="./assets/social/instagram.png" alt="instagram">
+                    <img src="./assets/social/facebook.png" alt="facebook">
+                    <img src="./assets/social/whatsapp.png" alt="whatsapp">
+                    <img src="./assets/social/telegram.png" alt="telegram">
+                    <img src="./assets/social/viber.png" alt="viber">
                 </div>
-                <p>Shop on map</p>
+                <p>Show on map</p>
             </div>
             <div class="footer__content">
                 <p class="footer__title">For Dropshiping</p>
@@ -54,6 +67,20 @@
     </footer>
 </div>
 
-<script src="main.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick/slick.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.main__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 4000,
+
+        });
+    });
+</script>
 </body>
 </html>

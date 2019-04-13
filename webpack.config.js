@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require('copy-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -20,7 +22,8 @@ module.exports = {
                         }
                     }, {
                         loader: "css-loader", options: {
-                            sourceMap: true
+                            sourceMap: true,
+                            localIdentName: 'styles',
                         }
                     }, {
                         loader: "sass-loader", options: {
@@ -34,6 +37,11 @@ module.exports = {
         }]
     },
     plugins: [
+        new CleanWebpackPlugin(),
+        new CopyPlugin([
+            { from: 'src/assets', to: 'assets' },
+            { from: 'src/slick', to: 'slick' },
+        ]),
         new HtmlWebpackPlugin({
             template: './src/index.html',
             filename: './index.html',

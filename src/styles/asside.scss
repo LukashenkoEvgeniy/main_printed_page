@@ -12,11 +12,11 @@ aside {
   .content_rotate {
     .asside__text {
       text-align: center;
+      padding-right: 250px;
       width: 100px;
       -webkit-transform: rotate(270deg);
       -moz-transform: rotate(270deg);
       -o-transform: rotate(270deg);
-      color: $text-color;
       white-space: pre;
     }
   }

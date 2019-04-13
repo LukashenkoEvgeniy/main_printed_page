@@ -1,0 +1,43 @@
+@import "./footer";
+@import "./asside";
+@import "./colors";
+@import "./main";
+
+$header_height: 4rem;
+$main_height: calc(100vh - #{$header_height});
+
+@font-face {
+  font-family: Gothic;
+  src: url("./fonts/CenturyGothic.ttf") format("truetype");
+}
+
+p{
+  margin: 0;
+}
+
+body, html{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Gothic, sans-serif;
+  color: $text-color;
+}
+
+#root {
+  background: $background;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas:  "aside header"
+                        "aside  main"
+                        "footer  footer";
+  grid-template-rows: $header_height $main_height 15rem;
+  grid-template-columns: 3rem 1fr;
+}
+
+header {
+  outline: 0.5px solid #dff1ff;
+  grid-area: header;
+}
+
+
