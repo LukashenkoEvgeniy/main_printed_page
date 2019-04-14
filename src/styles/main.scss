@@ -13,7 +13,12 @@ main {
   &__slide{
     height: calc(100vh - 4rem);
     background-image: url("../assets/pages/slide_1.jpg");
-
+  }
+  &__content{
+    position: absolute;
+    top: calc(50% - 7rem);
+    padding: 3rem;
+    width: 500px;
   }
 
   &__slide-down {
@@ -37,4 +42,14 @@ main {
     opacity:1;
     transform: translateY(46px);
   }
+}
+
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02{
+  &:before{
+    color: white;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
 }
