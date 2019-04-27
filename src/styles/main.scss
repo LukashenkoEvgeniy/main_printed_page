@@ -1,4 +1,5 @@
 @import "./colors";
+@import "slides/slide_2";
 
 main {
   grid-area: main;
@@ -61,7 +62,7 @@ main {
   padding-right: 5em;
 }
 
-#slide_3, #slide_4, #slide_5 {
+#slide_2, #slide_3, #slide_4, #slide_5 {
   display: flex !important;
   align-content: center;
   align-items: center;
@@ -71,12 +72,12 @@ main {
   .main__content{
     position: relative;
     top: inherit;
-    width: 100%;
+    width: 80%;
     img{
-      width: 100%;
+      width: 80%;
     }
     p{
-      line-height: 2em;
+      line-height: 1.5em;
     }
   }
 }
@@ -95,12 +96,12 @@ a.slider__link.slider__link--active, a.slider__link.slider__link--active:active{
 }
 
 .slider__navigator {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   font-size: 20px;
-  letter-spacing: 0.11em;
+  letter-spacing: 0.08em;
 }
 
 .row{
