@@ -161,7 +161,7 @@
             <div id="slide_6" class="main__slide" >
                 <div class="main__content">
                     <div class="row">
-                        <div class="col-7">
+                        <div class="col-8">
                             <!-- 4. Пишем скрипт который создаст и отобразит карту Google Maps на странице. -->
                             <script type="text/javascript">
 
@@ -177,7 +177,7 @@
                                 map = new google.maps.Map(document.getElementById('map'), {
                                   // При создании объекта карты необходимо указать его свойства
                                   // center - определяем точку на которой карта будет центрироваться
-                                  center: {lat: 50.3937018, lng: 30.4854047},
+                                  center: { lat: 50.3937018, lng: 30.4854047 },
                                   // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
                                   zoom: 15,
 
@@ -187,13 +187,13 @@
                                 var marker = new google.maps.Marker({
 
                                   // Определяем позицию маркера
-                                  position: {lat: 55.760186, lng: 37.618711},
+                                  position: { lat: 50.3937018, lng: 30.4854047 },
 
                                   // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
                                   map: map,
 
                                   // Пишем название маркера - появится если навести на него курсор и немного подождать
-                                  title: 'Наш маркер: Большой театр',
+                                  title: 'Место',
 
                                   // Укажем свою иконку для маркера
                                   icon: 'http://rightblog.ru/wp-content/uploads/2016/07/theatre_icon.png'
@@ -201,15 +201,7 @@
 
                                 // Создаем наполнение для информационного окна
                                 var contentString = '<div id="content">'+
-                                  '<div id="siteNotice">'+
-                                  '</div>'+
-                                  '<h1 id="firstHeading" class="firstHeading">Большой театр</h1>'+
-                                  '<div id="bodyContent">'+
-                                  '<p>Госуда́рственный академи́ческий Большо́й теа́тр Росси́и, или просто Большой театр — один из крупнейших' +
-                                  'в России и один из самых значительных в мире театров оперы и балета.</p>'+
-                                  '<p><b>Веб-сайт:</b> <a href="http://www.bolshoi.ru/" target="_blank">bolshoi.ru</a>'+
-                                  '</p>'+
-                                  '</div>'+
+                                  '<p>Васильковская 34, Kyiv, Ukraine 03022.</p>'+
                                   '</div>';
 
                                 // Создаем информационное окно
@@ -227,8 +219,16 @@
                             </script>
                             <div id="map"></div>
                         </div>
-                        <div class="col-5">
-                            описание
+                        <div class="col-4">
+                            <div class="slide_2__contacts">
+                                <h2>Наши контакты</h2>
+                                <p>Понравились наши работы?</p>
+                                <p>Тогда быстрее спешите сделать заказ!</p>
+                                <br />
+                                <a href="tel:+380937142000"><b>+380937142000</b></a>
+                                <a href="tel:+380937142000"><b>+380677142000</b></a>
+                                <a href="mailto:info.printed@gmail.com"><b>info.printed@gmail.com</b></a>
+                            </div>
                         </div>
                     </div>
                 </div>
