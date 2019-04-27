@@ -9,13 +9,14 @@ aside {
 
   .content_rotate {
     .asside__text {
+      justify-content: center;
+      display: flex;
       text-align: center;
-      padding-right: 250px;
-      width: 100px;
+      width: 100vh;
       -webkit-transform: rotate(270deg);
       -moz-transform: rotate(270deg);
       -o-transform: rotate(270deg);
-      white-space: pre;
+      letter-spacing: 2vh;
     }
   }
 

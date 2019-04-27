@@ -1,3 +1,5 @@
+@import "./colors";
+
 main {
   grid-area: main;
 }
@@ -51,4 +53,69 @@ main {
 
 .slick-dots li.slick-active button:before {
   color: white;
+}
+
+.col-6 {
+  width: 50%;
+  box-sizing: border-box;
+  padding-right: 5em;
+}
+
+#slide_3, #slide_4, #slide_5 {
+  display: flex !important;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-image: none !important;
+  .main__content{
+    position: relative;
+    top: inherit;
+    width: 100%;
+    img{
+      width: 100%;
+    }
+    p{
+      line-height: 2em;
+    }
+  }
+}
+
+a.slider__link, a.slider__link:active, a.slider__link:visited  {
+  color: $grey-text-color;
+  font-weight: bold;
+  text-decoration: none;
+  padding-bottom: 9px;
+  border-bottom: 3px solid $grey-text-color;
+}
+
+a.slider__link.slider__link--active, a.slider__link.slider__link--active:active{
+  color: $text-color;
+  border-bottom: 3px solid $text-color;
+}
+
+.slider__navigator {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 20px;
+  letter-spacing: 0.11em;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+h2{
+  font-size: 2em;
+  letter-spacing: 0.21em;
+}
+
+.slide-header__short-line {
+  border-bottom: 5px solid $text-color;
+  display: block;
+  width: 10em;
+  margin-bottom: 10px;
 }
