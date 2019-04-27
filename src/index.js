@@ -25,4 +25,7 @@ $(document).ready(function () {
     console.log('slideno', slideno);
     $('.main__slider').slick('slickGoTo', slideno - 1);
   });
+
+
 });
+
