@@ -4,6 +4,8 @@
 @import "slides/slide_4";
 @import "slides/slide_6";
 @import "slides/slide_7";
+@import "slides/slide_8";
+@import "./consts";
 
 main {
   grid-area: main;
@@ -17,7 +19,7 @@ main {
   }
 
   &__slide{
-    height: calc(100vh - 4rem);
+    height: 100%;
   }
   &__content{
     position: absolute;
@@ -144,3 +146,5 @@ h2{
   width: 10em;
   margin-bottom: 10px;
 }
+
+

@@ -1,26 +1,59 @@
 @import "../colors";
 
-#slide_8 {
-  display: flex !important;
+#price-slide {
+  display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
-  justify-items: center;
-  background-image: none !important;
+  width: 100%;
+  height: 90%;
 
-  .main__content {
-    position: relative;
-    top: inherit;
+  .content {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    height: 100%;
+    font-size: 25px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      img {
+        display: none;
+      }
+      }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      flex-shrink: 1;
+      width: 100%;
+      height: 100%;
+    }
 
     img {
       padding: 2%;
-      width: 100%;
+      max-height: 500px;
+      max-width: 90%;
     }
 
-    p {
-      line-height: 1.5em;
-    }
   }
+
+  .size {
+    font-size: calc(14px + 20vw);
+    font-weight: 600;
+  }
+
+  .size-table > span {
+    font-size: 40px;
+  }
+
+  .details {
+    margin-top: 50px;
+    width: 100%;
+  }
+
 }
 
