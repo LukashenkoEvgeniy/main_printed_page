@@ -2,6 +2,7 @@
 @import "slides/slide_2";
 @import "slides/slide_4";
 @import "slides/slide_6";
+@import "slides/slide_7";
 
 main {
   grid-area: main;
@@ -48,7 +49,7 @@ main {
   }
 }
 
-#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03, #slick-slide-control04, #slick-slide-control05, #slick-slide-control06{
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03, #slick-slide-control04, #slick-slide-control05, #slick-slide-control06, #slick-slide-control07, #slick-slide-control08, #slick-slide-control09{
   &:before{
     color: white;
   }
