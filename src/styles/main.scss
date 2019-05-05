@@ -1,4 +1,5 @@
 @import "./colors";
+@import "slides/slide_1";
 @import "slides/slide_2";
 @import "slides/slide_4";
 @import "slides/slide_6";
@@ -17,7 +18,6 @@ main {
 
   &__slide{
     height: calc(100vh - 4rem);
-    background-image: url("../assets/pages/slide_1.jpg");
   }
   &__content{
     position: absolute;
@@ -103,12 +103,6 @@ main {
     p{
       line-height: 1.5em;
     }
-  }
-}
-
-#slide_6{
-  .main__content{
-    padding: 0 !important;
   }
 }
 

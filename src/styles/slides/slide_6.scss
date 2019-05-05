@@ -1,6 +1,9 @@
 @import "../colors";
 
 #slide_6{
+  .main__content{
+    padding: 0 !important;
+  }
   p{
     font-weight: lighter;
     color: $grey-text-color;

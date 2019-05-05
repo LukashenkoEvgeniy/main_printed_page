@@ -1,0 +1,26 @@
+@import "../colors";
+
+#slide_8 {
+  display: flex !important;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  background-image: none !important;
+
+  .main__content {
+    position: relative;
+    top: inherit;
+    width: 100%;
+
+    img {
+      padding: 2%;
+      width: 100%;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+  }
+}
+
