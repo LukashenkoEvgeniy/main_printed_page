@@ -4,7 +4,7 @@
 @import "slides/slide_4";
 @import "slides/slide_6";
 @import "slides/slide_7";
-@import "slides/slide_8";
+@import "slides/price-slide";
 @import "./consts";
 
 main {
@@ -13,15 +13,21 @@ main {
 
 .main {
 
-  &__slider{
+
+  &__slider {
     width: calc(100vw - 65px);
     height: 95%;
+    padding: 10px;
+    @media (max-width: 768px) {
+      width: 100vw;
+    }
   }
 
-  &__slide{
+  &__slide {
     height: 100%;
   }
-  &__content{
+
+  &__content {
     position: absolute;
     top: calc(50% - 7rem);
     padding: 3rem;
@@ -46,13 +52,13 @@ main {
     opacity: 1;
   }
   100% {
-    opacity:1;
+    opacity: 1;
     transform: translateY(46px);
   }
 }
 
-#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03, #slick-slide-control04, #slick-slide-control05, #slick-slide-control06, #slick-slide-control07, #slick-slide-control08, #slick-slide-control09{
-  &:before{
+#slick-slide-control00, #slick-slide-control01, #slick-slide-control02, #slick-slide-control03, #slick-slide-control04, #slick-slide-control05, #slick-slide-control06, #slick-slide-control07, #slick-slide-control08, #slick-slide-control09 {
+  &:before {
     color: white;
   }
 }
@@ -67,21 +73,25 @@ main {
   box-sizing: border-box;
   padding-right: 5em;
 }
+
 .col-7 {
   width: 58.33333333333333%;
   box-sizing: border-box;
   padding-right: 5em;
 }
+
 .col-6 {
   width: 50%;
   box-sizing: border-box;
   padding-right: 5em;
 }
+
 .col-5 {
   width: 41.66666666666667%;
   box-sizing: border-box;
   padding-right: 5em;
 }
+
 .col-4 {
   width: 33.33333333333333%;
   box-sizing: border-box;
@@ -95,20 +105,23 @@ main {
   justify-content: center;
   justify-items: center;
   background-image: none !important;
-  .main__content{
+
+  .main__content {
     position: relative;
     top: inherit;
     width: 100%;
-    img{
+
+    img {
       width: 80%;
     }
-    p{
+
+    p {
       line-height: 1.5em;
     }
   }
 }
 
-a.slider__link, a.slider__link:active, a.slider__link:visited  {
+a.slider__link, a.slider__link:active, a.slider__link:visited {
   color: $grey-text-color;
   font-weight: bold;
   text-decoration: none;
@@ -116,7 +129,7 @@ a.slider__link, a.slider__link:active, a.slider__link:visited  {
   border-bottom: 3px solid $grey-text-color;
 }
 
-a.slider__link.slider__link--active, a.slider__link.slider__link--active:active{
+a.slider__link.slider__link--active, a.slider__link.slider__link--active:active {
   color: $text-color;
   border-bottom: 3px solid $text-color;
 }
@@ -130,12 +143,12 @@ a.slider__link.slider__link--active, a.slider__link.slider__link--active:active{
   letter-spacing: 0.08em;
 }
 
-.row{
+.row {
   display: flex;
   flex-direction: row;
 }
 
-h2{
+h2 {
   font-size: 2em;
   letter-spacing: 0.21em;
 }
