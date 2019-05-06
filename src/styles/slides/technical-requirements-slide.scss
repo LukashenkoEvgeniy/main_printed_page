@@ -1,12 +1,11 @@
-@import "../colors";
-
-#price-slide {
+#technical-requirements-slide {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 90%;
+  font-size: calc(9px + 1vw);
 
   .content {
     display: flex;
@@ -16,7 +15,7 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
-      .size-example-img {
+      .technical-requirements-slide__description-box {
         display: none;
       }
     }
@@ -25,7 +24,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      //align-items: center;
       flex-grow: 1;
       flex-shrink: 1;
       width: 100%;
@@ -40,24 +39,25 @@
 
   }
 
-  .size {
-    font-size: calc(14px + 20vw);
-    font-weight: 600;
+  .technical-requirements-header{
+    padding-top: 10%;
   }
 
-  .price-table {
-    padding-top: 15%;
-    font-size: 1.5em;
+  .technical-requirements-slide__description-box {
+    background: url("../assets/pages/technical-requirements.png") no-repeat;
+    background-size: cover;
+    font-size: calc(4px + 1vw);
   }
 
-  .size-table > span {
-    font-size: 50px;
-  }
-
-  .details {
-    margin-top: 20px;
+  .technical-requirements-slide____description-text {
     width: 100%;
+    height: 100%;
+    padding-top: 18%;
+    padding-left: 18%;
+    padding-bottom: 5%;
   }
-
 }
+
+
+
 
