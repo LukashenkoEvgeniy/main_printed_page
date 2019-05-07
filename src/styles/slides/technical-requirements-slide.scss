@@ -36,7 +36,6 @@
       max-height: 500px;
       max-width: 90%;
     }
-
   }
 
   .technical-requirements-header{
@@ -45,7 +44,7 @@
 
   .technical-requirements-slide__description-box {
     background: url("../assets/pages/technical-requirements.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
     font-size: calc(4px + 1vw);
   }
 

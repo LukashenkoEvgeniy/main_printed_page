@@ -1,52 +1,94 @@
 @import "../colors";
 
-#slide_6{
-  .main__content{
-    padding: 0 !important;
+#contact-slide {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90%;
+  font-size: calc(9px + 1vw);
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      .contact-slide__contacts {
+        background: #2d2d2d;
+        padding: 10px 0 0 0;
+        margin: 0;
+      }
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      //align-items: center;
+      flex-grow: 1;
+      flex-shrink: 1;
+      width: 100%;
+    }
   }
-  p{
+
+  .contact-slide__contacts {
+    background: #2d2d2d;
+    padding: 10% 30px 10% 30px;
+    margin: 10%;
+  }
+
+  p {
     font-weight: lighter;
     color: $grey-text-color;
   }
-  h2{
+
+  h2 {
     font-size: 1.5em;
     letter-spacing: 0.11em;
   }
+
   .col-4 {
     align-items: center;
     display: flex;
   }
-  .slide_2__contacts{
-    background: #2d2d2d;
-    padding:  10px 30px 10px 30px;
-  }
+
+
   #map {
     width: 100%;
-    height: 500px;
+    height: 450px;
   }
-  a, a:visited, a:active{
+
+  a, a:visited, a:active {
     color: $text-color;
     text-decoration: none;
     display: block;
   }
 }
+
 .gm-style-iw {
   background: black;
   box-shadow: -14px 0px 0px black, -14px 9px 0px black, -14px -8px 0px black, 15px -8px 0px black, 15px 9px 0px black;
 }
+
 .gm-style-iw {
   overflow: visible !important;
 
   div {
     overflow: visible !important;
   }
-  button{
+
+  button {
     background: rgb(221, 221, 221) !important;
     top: -20px !important;
     right: -20px !important;
 
   }
 }
+
 .gm-style-iw {
   // Стрелочка
   &::after {
@@ -68,6 +110,7 @@
   background: black !important;
   color: $text-color !important;
 }
+
 .gm-style-iw-t::after {
   background: black !important;
 }
