@@ -1,13 +1,10 @@
-#collaboration-slide {
-  height: calc(100vh - 70px);
-
-  padding: 0 5vh 0 5vw;
-
+#sewing-slide {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: center;
-
+  width: 100%;
+  height: 90%;
   font-size: calc(9px + 1vw);
 
   .content {
@@ -18,7 +15,7 @@
 
     @media (max-width: 768px) {
       flex-direction: column;
-      .collaboration-img {
+      .sewing-slide__img {
         display: none;
       }
     }
@@ -34,15 +31,32 @@
       height: 100%;
     }
 
-    .collaboration-img  {
+    img {
       padding: 2%;
       max-height: 500px;
       max-width: 90%;
     }
   }
 
-  .collaboration-header{
+  .technical-requirements-header{
     padding-top: 10%;
   }
+
+  .sewing-slide__img {
+    padding: 2%;
+    max-height: 500px;
+    max-width: 90%;
+  }
+
+  .technical-requirements-slide____description-text {
+    width: 100%;
+    height: 100%;
+    padding-top: 18%;
+    padding-left: 18%;
+    padding-bottom: 5%;
+  }
 }
+
+
+
 

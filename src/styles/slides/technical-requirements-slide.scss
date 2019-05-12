@@ -44,8 +44,8 @@
   }
 
   .technical-requirements-slide__description-box {
-    //background: url("../assets/pages/technical-requirements.png") no-repeat;
-    //background-size: cover;
+    background: url("../assets/pages/technical-requirements.png") no-repeat;
+    background-size: contain;
     font-size: calc(4px + 1vw);
   }
 

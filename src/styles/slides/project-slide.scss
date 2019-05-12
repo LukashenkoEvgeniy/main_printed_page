@@ -1,0 +1,44 @@
+#project-slide {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    font-size: calc(9px + 1vw);
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        .collaboration-img {
+          display: none;
+        }
+      }
+
+      &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        //align-items: center;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 100%;
+        height: 100%;
+      }
+
+      .collaboration-img  {
+        padding: 2%;
+        max-height: 500px;
+        max-width: 90%;
+      }
+    }
+
+    .collaboration-header{
+      padding-top: 10%;
+    }
+  }
