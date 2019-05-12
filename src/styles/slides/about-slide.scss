@@ -1,6 +1,8 @@
 #about-slide {
 
-  height: 100%;
+  height: calc(100vh - 70px);
+  font-size: 20px;
+
 
   .content {
     display: flex;
@@ -12,7 +14,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      //align-items: center;
       flex-grow: 1;
       flex-shrink: 1;
       width: 100%;
@@ -28,8 +30,8 @@
   }
 
   .about-header {
-    margin: 10% 0 10% 0;
-    font-size: 2em;
+    //margin: 10% 0 10% 0;
+    //font-size: 2em;
     font-weight: bold;
   }
 
