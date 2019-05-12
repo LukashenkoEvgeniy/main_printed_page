@@ -18,6 +18,9 @@
       flex-direction: column;
       .size-example-img {
         display: none;
+        img{
+          display: none;
+        }
       }
     }
 
@@ -35,7 +38,7 @@
     img {
       padding: 2%;
       max-height: 500px;
-      max-width: 90%;
+      max-width: 412px;
     }
 
   }
