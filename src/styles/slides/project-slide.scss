@@ -7,12 +7,16 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
   .project-slide__centered-cell{
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img{
+      max-height: 250px;
+    }
   }
 
-  img{
-    width: 100%;
-  }
+
 
   .project-slide__header-block{
     grid-row-start: 1;
@@ -26,6 +30,9 @@
     grid-column-start: 4;
     grid-row-end: 4;
     grid-column-end: 5;
+    img{
+      max-height: 740px;
+    }
   }
 
   .project-slide__paint-img{
@@ -33,6 +40,9 @@
     grid-column-start: 3;
     grid-row-end: 4;
     grid-column-end: 4;
+    img{
+      max-height: 400px;
+    }
   }
 
   .project-slide__japan-img{
@@ -40,9 +50,15 @@
     grid-column-start: 1;
     grid-row-end: 4;
     grid-column-end: 3;
+    img {
+      max-height: 230px;
+    }
   }
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 800px) {
+    img{
+      width: 100%;
+    }
     .project-slide__header-block{
       grid-row-start: 1;
       grid-column-start: 1;
